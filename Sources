@@ -1,0 +1,13 @@
+#下邊這行指定生成驅動名字DDK_HelloWorld.sys
+TARGETNAME=PASS_HS
+#下邊這行指定生成文件的類型DRIVER指驅動
+TARGETTYPE=DRIVER
+#下邊這行指定生成驅動所在的路徑\SYS\DDK_HelloWorld.sys
+TARGETPATH=SYS
+#下邊這行指定相關頭文件所在目錄路徑
+INCLUDES=$(BASEDIR)\inc;\
+      $(BASEDIR)\inc\wxp;\ 
+
+##上邊必空一行D:\WINDDK\3790.1830 等價$(BASEDIR)
+#下邊這行指定驅動源代碼*.cpp或者*.c
+SOURCES=mini_ddk.cpp\ 
